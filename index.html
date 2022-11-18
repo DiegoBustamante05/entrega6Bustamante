@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Page Title</title>
+    <script src="/socket.io/socket.io.js"></script>
+    <link rel="stylesheet" href="/style.css" />
+    <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous"
+        />
+    <script src="/index.js"></script>
+  </head>
+  <body>
+    <section class="m-5">
+      <div class="container">
+        <h2>Ingrese Producto</h2>
+          <form onsubmit="sendProduct(); return false;" class="d-flex justify-content-center align-items-center flex-column" >
+              <label>Nombre</label>
+              <input type="text"  id="title">
+              <label>Precio</label>
+              <input type="number" id="price">
+              <label>Foto URL</label>
+              <input type="text" id="thumbnail">
+              <br>
+              <input type="submit" value="Enviar"/>
+          </form>
+    </section>
+    <section>
+      <h2 class="otroColor">Lista de Productos</h2>
+      <div id="div-list-products"></div>
+    </section>
+      
+
+      </div>
+    <section >
+      <h2>Centro de mensajes</h2>
+      <form  class="d-flex justify-content-center align-items-center flex-column" onsubmit="enviarMsg();return false;">
+        <input id="input-email" placeholder="diego@gmail.com"/><br />
+        <br />
+        <div id="div-list-msgs"></div>
+        <br />
+        <input class="m2" id="input-msg" placeholder="Ingresá un mensaje..." />
+        <br />
+        <input  type="submit" value="Enviar!" />
+      </form>
+    </section>
+
+  </body>
+</html>
+
+

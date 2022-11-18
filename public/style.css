@@ -1,0 +1,29 @@
+h2 {
+  color: blue;
+  text-align: center;
+}
+
+.product-img {
+  width: 80px;
+  max-width: 80px;
+  height: 80px;
+  max-height: 80px;
+}
+
+.otroColor{
+  color: #641c34;
+}
+
+.textoAzul{
+  color: blue;
+  font-weight: bold;
+}
+
+.textoVerde{
+  color: green;
+  font-style: italic;
+}
+
+.textoMarron{
+  color: #6c3b2a;
+}
